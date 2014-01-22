@@ -164,8 +164,15 @@
   <script src="./main.js"></script>
 
   <script type="text/javascript">
+    // This is absolutely horrific, but GitHub pages provides no sensible
+    // mechanism of redirecting from org pages to project pages with canonical
+    // URLs.
     if (window.location.href.indexOf('http://annotatorjs.org') !== 0) {
-      window.location.href = 'http://annotatorjs.org' + window.location.pathname;
+      if (window.location.pathname.indexOf('/annotator/') === 0) {
+        window.location.href = 'http://annotatorjs.org' + window.location.pathname.substr(10);
+      } else {
+        window.location.href = 'http://annotatorjs.org' + window.location.pathname;
+      }
     }
   </script>
 
