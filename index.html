@@ -13,6 +13,7 @@
 
   <link href='http://fonts.googleapis.com/css?family=Arvo:regular,bold&amp;subset=latin' rel='stylesheet' />
   <link href='http://fonts.googleapis.com/css?family=Inconsolata&amp;subset=latin' rel='stylesheet' />
+  <link rel="canonical" href="http://annotatorjs.org">
   <link rel="stylesheet" href="./main.css">
 </head>
 <body>
@@ -39,7 +40,7 @@
           <p>The Annotator is an open-source JavaScript library and tool that can be added to any webpage
           to make it annotatable.</p>
           <p>Annotations can have comments, tags, users and
-	  more. Morever, the Annotator is designed for 
+	  more. Morever, the Annotator is designed for
           <a href="http://github.com/okfn/annotator/wiki/Plugin-Development">easy
           extensibility</a> so its a cinch to add a new feature or behaviour.</p>
           <p>Check out the <a href="./demo/">live
@@ -161,6 +162,13 @@
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
   <script src="./main.js"></script>
+
+  <script type="text/javascript">
+    if (window.location.href.indexOf('http://annotatorjs.org') !== 0) {
+      window.location.href = 'http://annotatorjs.org' + window.location.pathname;
+    }
+  </script>
+
   <script type="text/javascript">
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-8271754-31']);
@@ -172,6 +180,7 @@
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
   </script>
+
   <script src="http://assets.okfn.org/banner/banner.js"></script>
 </body>
 </html>
