@@ -1,88 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <!-- Prevent the conditional comments from stalling page load -->
-  <!--[if IE]><![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home - Annotator - Annotating the Web</title>
 
-  <title>Home - Annotator - Annotating the Web</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-  <!--[if lt IE 9]>
-  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
-
-  <link href='http://fonts.googleapis.com/css?family=Arvo:regular,bold&amp;subset=latin' rel='stylesheet' />
-  <link href='http://fonts.googleapis.com/css?family=Inconsolata&amp;subset=latin' rel='stylesheet' />
-  <link rel="canonical" href="http://annotatorjs.org">
-  <link rel="stylesheet" href="./main.css">
-</head>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link href='http://fonts.googleapis.com/css?family=Arvo:regular,bold&amp;subset=latin' rel='stylesheet' />
+    <link href='http://fonts.googleapis.com/css?family=Inconsolata&amp;subset=latin' rel='stylesheet' />
+    <link rel="canonical" href="http://annotatorjs.org">
+    <link rel="stylesheet" href="css/custom.css">
+  </head>
 <body>
-  <div id="airlock">
-    <header>
+  <div class="container">
+    <div class="header">
       <h1>
         <a href="./" title="The Annotator Homepage">Annotator</a>
       </h1>
       <nav>
-        <ul>
-          <li><a href="http://github.com/openannotation/annotator/" title="Check out the repository">Code</a></li>
-          <li><a href="./demo/" title="Live demo">Demo</a></li>
-          <li><a href="http://docs.annotatorjs.org" title="Read the docs">Docs</a></li>
-          <li><a href="http://github.com/openannotation/annotator/issues/" title="Report an issue">Issues</a></li>
-          <li><a href="http://www.shuttleworthfoundation.org/"><img src="http://farm8.staticflickr.com/7002/6431161181_10711abd2a_o.jpg" style="float: right; border: none; width: 120px; margin-bottom: -13px;"/></a></li>
-        </ul>
+          <ul>
+            <li><a href="http://github.com/okfn/annotator/" title="Check out the repository">Code</a></li>
+            <li><a href="./demo/" title="Live demo">Demo</a></li>
+            <li><a href="http://docs.annotatorjs.org" title="Read the docs">Docs</a></li>
+            <li><a href="http://github.com/okfn/annotator/issues/" title="Report an issue">Issues</a></li>
+     <!--        <li><a href="http://www.shuttleworthfoundation.org/"><img src="http://farm8.staticflickr.com/7002/6431161181_10711abd2a_o.jpg" style="float: right; border: none; width: 120px; margin-bottom: -13px;"/></a></li> -->
+          </ul>
       </nav>
-    </header>
+    </div>
     <article>
-      <section>
-      <h2>The <span id="role">copy-editor</span> of the web
-      </h2>
-        <div class="primary">
+      
+      <div class="row">
+        <div class="col-lg-6">
+          <h2>The <span id="role">copy-editor</span> of the web</h2>
           <p>The Annotator is an open-source JavaScript library and tool that can be added to any webpage
           to make it annotatable.</p>
-          <p>Annotations can have comments, tags, users and
-	  more. Morever, the Annotator is designed for
-          <a href="http://github.com/openannotation/annotator/wiki/Plugin-Development">easy
-          extensibility</a> so its a cinch to add a new feature or behaviour.</p>
-          <p>Check out the <a href="./demo/">live
-          demonstration</a> or <a href="#develop">install it now</a>.</p>
+          <p>Annotations can have comments, tags, users and more. Morever, the Annotator is designed for
+          <a href="http://github.com/okfn/annotator/wiki/Plugin-Development">easy extensibility</a> so its a cinch to add a new feature or behaviour.</p>
+          <p>Check out the <a href="./demo/">live demonstration</a> or <a href="#develop">install it now</a>.</p>
         </div>
-        <div class="secondary">
+        <div class="col-lg-6">
           <img class="screenshot" src="./images/annotator.png" alt="The annotator" height="223" width="370" />
         </div>
-      </section>
-      <section>
-        <div class="primary">
+      </div>
+
+      <div class="row">
+        <div class="col-xs-3">
           <div class="thumbnails">
-            <img src="./images/thumb-add.png" alt="Highlight text to annotate" height="128" width="175" />
-            <img src="./images/thumb-viewer.png" alt="View annotations by moving your mouse over highlights" height="128" width="175" />
+            <img src="./images/thumb-add.png" alt="Highlight text to annotate" />
           </div>
         </div>
-        <div class="secondary">
+        <div class="col-xs-3">
           <div class="thumbnails">
-            <img src="./images/thumb-bookmarklet.png" alt="Add the annotator to any page with the bookmarklet" height="128" width="175" />
-            <img src="./images/thumb-editor.png" alt="Save annotations to AnnotateIt" height="128" width="175" />
+            <img src="./images/thumb-viewer.png" alt="View annotations by moving your mouse over highlights" />
           </div>
         </div>
-      </section>
-      <section>
+        <div class="col-xs-3">
+          <div class="thumbnails">
+            <img src="./images/thumb-bookmarklet.png" alt="Add the annotator to any page with the bookmarklet"  />
+          </div>
+        </div>
+        <div class="col-xs-3">
+          <div class="thumbnails">
+            <img src="./images/thumb-editor.png" alt="Save annotations to AnnotateIt" />
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row">
         <h2 id="develop">Using Annotator</h2>
-        <div class="primary">
+        <div class="col-lg-6">
           <p>Adding annotation to your webpage using the Annotator is easy.
             Full instructions are in the <a
-            href="http://github.com/openannotation/annotator/wiki/Getting-Started">Getting
+            href="http://github.com/okfn/annotator/wiki/Getting-Started">Getting
             Started</a> section of the docs, but it is just two short steps. First, you
-            need to <a href="http://github.com/openannotation/annotator/downloads/">download the
+            need to <a href="http://github.com/okfn/annotator/downloads/">download the
             Annotator library</a> (or link to the hosted version), include it on your page
             along with <a href="http://jquery.com/">jQuery</a>. Then add the
             following line to initialize the annotator.</p>
           <pre><code>$('#content').annotator();</code></pre>
           <p>Plug-ins can be included for adding functionality such as user
-             <a href="http://github.com/openannotation/annotator/wiki/User-Plugin">accounts</a>,
-             <a href="http://github.com/openannotation/annotator/wiki/Tags-Plugin">tags</a>,
-             <a href="http://github.com/openannotation/annotator/wiki/Filter-Plugin">filtering</a> and
-             <a href="http://github.com/openannotation/annotator/wiki/Markdown-Plugin">formatting</a>.</p>
+             <a href="http://github.com/okfn/annotator/wiki/User-Plugin">accounts</a>,
+             <a href="http://github.com/okfn/annotator/wiki/Tags-Plugin">tags</a>,
+             <a href="http://github.com/okfn/annotator/wiki/Filter-Plugin">filtering</a> and
+             <a href="http://github.com/okfn/annotator/wiki/Markdown-Plugin">formatting</a>.</p>
         </div>
-        <div class="secondary">
+        <div class="col-lg-6">
           <p>To setup the default suite of plugins include
              <a href="http://assets.annotateit.org/annotator/v1.2.5/annotator.min.css">annotator.min.css</a> and
              <a href="http://assets.annotateit.org/annotator/v1.2.5/annotator-full.min.js">annotator-full.min.js</a>
@@ -92,10 +104,11 @@
           <pre><code>$('#content').annotator()
              .annotator('setupPlugins');</code></pre>
         </div>
-      </section>
-      <section>
+      </div>
+
+      <div class="row">
         <div id="about">
-          <div id="annotator" class="primary">
+          <div id="annotator" class="col-lg-6">
             <h2>Storage</h2>
             <p>You'll need to store your data somewhere, luckily we've made
                this very simple to do using
@@ -103,10 +116,10 @@
                web service for storing annotations.</p>
             <p>Alternatively if you'd like to integrate the annotator with your
                own storage system check out the
-               <a href="http://github.com/openannotation/annotator/wiki/">Docs</a> for more
+               <a href="http://github.com/okfn/annotator/wiki/">Docs</a> for more
                information on the annotation format and store plugin.</p>
           </div>
-          <div class="secondary">
+          <div class="col-lg-6">
             <h2>The Bookmarklet</h2>
             <p>The bookmarklet is a simple tool that allows you to add the
                annotator to any webpage and save your annotations to AnnotateIt.
@@ -114,8 +127,9 @@
              </p>
           </div>
         </div>
-      </section>
+      </div>
     </article>
+
     <footer>
       <p>Annotator was developed by the
         <img src="http://assets.okfn.org/images/logo/okf_logo_white_and_green_tiny.png" id="footer-okf-logo" />
@@ -161,7 +175,21 @@
     </footer>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-  <script src="./main.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- This is absolutely horrific
+  <script type="text/javascript">
+    // This is absolutely horrific, but GitHub pages provides no sensible
+    // mechanism of redirecting from org pages to project pages with canonical
+    // URLs.
+    // if (window.location.href.indexOf('http://annotatorjs.org') !== 0) {
+    //   if (window.location.pathname.indexOf('/annotator/') === 0) {
+    //     window.location.href = 'http://annotatorjs.org' + window.location.pathname.substr(10);
+    //   } else {
+    //     window.location.href = 'http://annotatorjs.org' + window.location.pathname;
+    //   }
+    // }
+  </script> -->
 
   <script type="text/javascript">
     var _gaq = _gaq || [];
@@ -174,7 +202,5 @@
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
   </script>
-
-  <script src="http://assets.okfn.org/banner/banner.js"></script>
 </body>
 </html>

@@ -8,25 +8,15 @@ body {
 	margin: 0;
 }
 
-#airlock {
-	width: 780px;
-	padding: 0 10px;
-	margin: 0 auto;
-}
-
 img {
 	display: block;
 	border: 5px solid #333;
 }
 
-header, section, article, footer {
+.header, section, article, footer {
 	display: block;
 }
 
-h1, h2, h3, h4, h5, h6, p, ul, ol {
-	font-size: 1em /* 10px */;
-	margin: 0;
-}
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: Arvo;
@@ -156,23 +146,23 @@ form .actions button {
 }
 
 /**************************************
-  * Header
+  * .Header
   *************************************/
 
-header, nav, section, article, footer {
+.header, nav, section, article, footer {
 	display: block;
 }
 
-header, section {
+.header, section {
 	margin: 2em 0 3em;
 	border-bottom: 1px solid #eee;
 }
 
-header {
+.header {
 	padding-bottom: 0.5em;
 }
 
-header::after {
+.header::after {
 	display: block;
 	height: 0;
 	visibility: 0;
@@ -180,16 +170,16 @@ header::after {
 	clear: both;
 }
 
-header h1 {
+.header h1 {
 	position: relative;
 	float: left;
 	font-size: 6.4em;
 }
 
-header h1 a,
-header h1 a:hover,
-header h1 a:focus,
-header h1 a:active {
+.header h1 a,
+.header h1 a:hover,
+.header h1 a:focus,
+.header h1 a:active {
 	color: #333;
 	-webkit-transition: none;
 	-moz-transition: none;
@@ -197,7 +187,7 @@ header h1 a:active {
 	transition: none;
 }
 
-header h1::after {
+.header h1::after {
 	position: absolute;
 	content: "";
 	display: block;
@@ -208,81 +198,63 @@ header h1::after {
 	background: url(images/glyph-logo.png) no-repeat top left;
 }
 
-header h1:hover::after,
-header h1:focus::after {
+.header h1:hover::after,
+.header h1:focus::after {
 	background-position: left center;
 }
 
-header h1:active::after {
+.header h1:active::after {
 	background-position: left bottom;
 }
 
-header h1 a {
+.header h1 a {
 	border-bottom: none;
 }
 
-header nav {
+.header nav {
 	padding-top: 4em;
 	float: right;
 }
 
-header nav ul,
-header nav ul li {
+.header nav ul,
+.header nav ul li {
 	padding: 0;
 	margin: 0;
 	display: block;
 	list-style-type: none;
 }
 
-header nav ul li {
+.header nav ul li {
 	padding: 0;
 	font-size: 1.8em;
 	display: inline-block;
 }
 
-header nav ul li a {
+.header nav ul li a {
 	font-weight: bold;
 	display: inline-block;
 	padding-bottom: 3px;
 	border-bottom: none;
 }
 
-header nav ul li a:hover,
-header nav ul li a.current {
+.header nav ul li a:hover,
+.header nav ul li a.current {
 	border-bottom: 2px solid;
 }
 
-header nav ul li::after {
+.header nav ul li::after {
 	display: inline-block;
 	padding: 0 0.5em;
 	content: "/";
 }
 
-header nav ul li:last-of-type::after {
+.header nav ul li:last-of-type::after {
 	display: none;
 }
 
 /**************************************
   * Main Content
   *************************************/
-
-section  {
-	overflow: hidden;
-	clear: left;
-}
-
-article .primary,
-article .secondary {
-	width: 380px;
-}
-
-article .primary {
-	float: left;
-}
-
-article .secondary  {
-	float: right;
-}
 
 article p,
 article ul,
@@ -519,3 +491,34 @@ ul.notification li.error {
 	border-bottom-color: #ccc;
 	color: #b50000;
 }
+
+
+/**************************************
+  * Media Queries
+  *************************************/
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 1030px;
+    font-size: 11px;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+}
+
