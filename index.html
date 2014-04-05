@@ -28,23 +28,28 @@
       </h1>
       <nav>
           <ul>
-            <li><a href="http://github.com/okfn/annotator/" title="Check out the repository">Code</a></li>
+            <li><a href="/how-to-use.html" title="How to use it">How to use it</a></li>
+            <li><a href="/customize.html" title="Customize">Customize</a></li>
+            <li><a href="/" title="Customize">Customize</a></li>
+          </ul>
+          <ul>
+            <li><a href="http://github.com/openannotation/annotator/" title="Check out the repository">Code</a></li>
             <li><a href="./demo/" title="Live demo">Demo</a></li>
             <li><a href="http://docs.annotatorjs.org" title="Read the docs">Docs</a></li>
-            <li><a href="http://github.com/okfn/annotator/issues/" title="Report an issue">Issues</a></li>
+            <li><a href="http://github.com/openannotation/annotator/issues/" title="Report an issue">Issues</a></li>
      <!--        <li><a href="http://www.shuttleworthfoundation.org/"><img src="http://farm8.staticflickr.com/7002/6431161181_10711abd2a_o.jpg" style="float: right; border: none; width: 120px; margin-bottom: -13px;"/></a></li> -->
           </ul>
       </nav>
     </div>
     <article>
-      
+
       <div class="row">
         <div class="col-lg-6">
           <h2>The <span id="role">copy-editor</span> of the web</h2>
           <p>The Annotator is an open-source JavaScript library and tool that can be added to any webpage
           to make it annotatable.</p>
           <p>Annotations can have comments, tags, users and more. Morever, the Annotator is designed for
-          <a href="http://github.com/okfn/annotator/wiki/Plugin-Development">easy extensibility</a> so its a cinch to add a new feature or behaviour.</p>
+          <a href="http://github.com/openannotation/annotator/wiki/Plugin-Development">easy extensibility</a> so its a cinch to add a new feature or behaviour.</p>
           <p>Check out the <a href="./demo/">live demonstration</a> or <a href="#develop">install it now</a>.</p>
         </div>
         <div class="col-lg-6">
@@ -81,18 +86,18 @@
         <div class="col-lg-6">
           <p>Adding annotation to your webpage using the Annotator is easy.
             Full instructions are in the <a
-            href="http://github.com/okfn/annotator/wiki/Getting-Started">Getting
+            href="http://github.com/openannotation/annotator/wiki/Getting-Started">Getting
             Started</a> section of the docs, but it is just two short steps. First, you
-            need to <a href="http://github.com/okfn/annotator/downloads/">download the
+            need to <a href="http://github.com/openannotation/annotator/downloads/">download the
             Annotator library</a> (or link to the hosted version), include it on your page
             along with <a href="http://jquery.com/">jQuery</a>. Then add the
             following line to initialize the annotator.</p>
           <pre><code>$('#content').annotator();</code></pre>
           <p>Plug-ins can be included for adding functionality such as user
-             <a href="http://github.com/okfn/annotator/wiki/User-Plugin">accounts</a>,
-             <a href="http://github.com/okfn/annotator/wiki/Tags-Plugin">tags</a>,
-             <a href="http://github.com/okfn/annotator/wiki/Filter-Plugin">filtering</a> and
-             <a href="http://github.com/okfn/annotator/wiki/Markdown-Plugin">formatting</a>.</p>
+             <a href="http://github.com/openannotation/annotator/wiki/User-Plugin">accounts</a>,
+             <a href="http://github.com/openannotation/annotator/wiki/Tags-Plugin">tags</a>,
+             <a href="http://github.com/openannotation/annotator/wiki/Filter-Plugin">filtering</a> and
+             <a href="http://github.com/openannotation/annotator/wiki/Markdown-Plugin">formatting</a>.</p>
         </div>
         <div class="col-lg-6">
           <p>To setup the default suite of plugins include
@@ -116,7 +121,7 @@
                web service for storing annotations.</p>
             <p>Alternatively if you'd like to integrate the annotator with your
                own storage system check out the
-               <a href="http://github.com/okfn/annotator/wiki/">Docs</a> for more
+               <a href="http://github.com/openannotation/annotator/wiki/">Docs</a> for more
                information on the annotation format and store plugin.</p>
           </div>
           <div class="col-lg-6">
@@ -176,21 +181,7 @@
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
   <script src="js/main.js"></script>
-
-  <!-- This is absolutely horrific
-  <script type="text/javascript">
-    // This is absolutely horrific, but GitHub pages provides no sensible
-    // mechanism of redirecting from org pages to project pages with canonical
-    // URLs.
-    // if (window.location.href.indexOf('http://annotatorjs.org') !== 0) {
-    //   if (window.location.pathname.indexOf('/annotator/') === 0) {
-    //     window.location.href = 'http://annotatorjs.org' + window.location.pathname.substr(10);
-    //   } else {
-    //     window.location.href = 'http://annotatorjs.org' + window.location.pathname;
-    //   }
-    // }
-  </script> -->
-
+  
   <script type="text/javascript">
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-8271754-31']);
