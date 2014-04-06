@@ -305,6 +305,28 @@ article .screenshot {
 }
 
 /**************************************
+	* Showcase page
+	*************************************/
+
+.showcase .row {
+	padding: 10px;
+}
+
+.showcase .screenshot {
+	height: 300px;
+	width: 400px;
+}
+
+.showcase .logo {
+	height: 150px;
+	width: 200px;
+}
+
+.showcase a {
+	font-weight: bold;
+}
+
+/**************************************
   * Footer
   *************************************/
 
@@ -470,7 +492,7 @@ ul.notification li {
 	width: auto;
 	line-height: 1em;
 	font-size: 14px;
-	padding: 0.8em 1.5%; 
+	padding: 0.8em 1.5%;
 	font-weight: bold;
 	text-align: center;
 	border-bottom: solid 1px #9f9f9f;
@@ -521,4 +543,3 @@ ul.notification li.error {
     margin-bottom: 30px;
   }
 }
-

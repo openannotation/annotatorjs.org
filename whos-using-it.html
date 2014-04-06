@@ -36,98 +36,155 @@
           </ul>
       </nav>
     </div>
-    <article>
-      
+    <article class="showcase">
+
       <div class="row">
-        <div class="col-lg-6">
-          <h2>The <span id="role">copy-editor</span> of the web</h2>
-          <p>The Annotator is an open-source JavaScript library and tool that can be added to any webpage
-          to make it annotatable.</p>
-          <p>Annotations can have comments, tags, users and more. Morever, the Annotator is designed for
-          <a href="http://github.com/okfn/annotator/wiki/Plugin-Development">easy extensibility</a> so its a cinch to add a new feature or behaviour.</p>
-          <p>Check out the <a href="./demo/">live demonstration</a> or <a href="#develop">install it now</a>.</p>
+        <div class="col-sm-6">
+          <h2>Who's Using It?</h2>
         </div>
-        <div class="col-lg-6">
-          <img class="screenshot" src="./images/annotator.png" alt="The annotator" height="223" width="370" />
+        <div class="col-sm-6">
         </div>
       </div>
 
       <div class="row">
-        <div class="col-xs-3">
-          <div class="thumbnails">
-            <img src="./images/thumb-add.png" alt="Highlight text to annotate" />
-          </div>
+        <div class="col-sm-6">
+          <p><a href="http://hypothes.is">Hypothes.is</a> is an open platform for the collaborative evaluation of knowledge. It combines sentence-level critique with community peer-review to provide commentary, references, and insight on top of news, blogs, scientific articles, books, terms of service, ballot initiatives, legislation and regulations, software code and more.</p>
         </div>
-        <div class="col-xs-3">
-          <div class="thumbnails">
-            <img src="./images/thumb-viewer.png" alt="View annotations by moving your mouse over highlights" />
-          </div>
-        </div>
-        <div class="col-xs-3">
-          <div class="thumbnails">
-            <img src="./images/thumb-bookmarklet.png" alt="Add the annotator to any page with the bookmarklet"  />
-          </div>
-        </div>
-        <div class="col-xs-3">
-          <div class="thumbnails">
-            <img src="./images/thumb-editor.png" alt="Save annotations to AnnotateIt" />
-          </div>
-        </div>
-      </div>
-
-
-      <div class="row">
-        <h2 id="develop">Using Annotator</h2>
-        <div class="col-lg-6">
-          <p>Adding annotation to your webpage using the Annotator is easy.
-            Full instructions are in the <a
-            href="http://github.com/okfn/annotator/wiki/Getting-Started">Getting
-            Started</a> section of the docs, but it is just two short steps. First, you
-            need to <a href="http://github.com/okfn/annotator/downloads/">download the
-            Annotator library</a> (or link to the hosted version), include it on your page
-            along with <a href="http://jquery.com/">jQuery</a>. Then add the
-            following line to initialize the annotator.</p>
-          <pre><code>$('#content').annotator();</code></pre>
-          <p>Plug-ins can be included for adding functionality such as user
-             <a href="http://github.com/okfn/annotator/wiki/User-Plugin">accounts</a>,
-             <a href="http://github.com/okfn/annotator/wiki/Tags-Plugin">tags</a>,
-             <a href="http://github.com/okfn/annotator/wiki/Filter-Plugin">filtering</a> and
-             <a href="http://github.com/okfn/annotator/wiki/Markdown-Plugin">formatting</a>.</p>
-        </div>
-        <div class="col-lg-6">
-          <p>To setup the default suite of plugins include
-             <a href="http://assets.annotateit.org/annotator/v1.2.5/annotator.min.css">annotator.min.css</a> and
-             <a href="http://assets.annotateit.org/annotator/v1.2.5/annotator-full.min.js">annotator-full.min.js</a>
-             and call the <code>"setupPlugins"</code> method via
-             <code>.annotator()</code>.</p>
-          <p>For example:</p>
-          <pre><code>$('#content').annotator()
-             .annotator('setupPlugins');</code></pre>
+        <div class="col-sm-6">
+          <img src="./images/wui-hypothesis.png" alt="Hypothes.is screenshot" class="screenshot" />
         </div>
       </div>
 
       <div class="row">
-        <div id="about">
-          <div id="annotator" class="col-lg-6">
-            <h2>Storage</h2>
-            <p>You'll need to store your data somewhere, luckily we've made
-               this very simple to do using
-               <a href="http://annotateit.org/">AnnotateIt</a>, a hosted
-               web service for storing annotations.</p>
-            <p>Alternatively if you'd like to integrate the annotator with your
-               own storage system check out the
-               <a href="http://github.com/okfn/annotator/wiki/">Docs</a> for more
-               information on the annotation format and store plugin.</p>
-          </div>
-          <div class="col-lg-6">
-            <h2>The Bookmarklet</h2>
-            <p>The bookmarklet is a simple tool that allows you to add the
-               annotator to any webpage and save your annotations to AnnotateIt.
-               Check it out at <a href="http://annotateit.org">http://annotateit.org/</a>.
-             </p>
-          </div>
+        <div class="col-sm-6">
+          <p>The <a href="http://openvideoannotation.org">Open Video Annotation Project</a> led by Harvard offers a simple way for anyone to create media-rich commentaries on fragments of video.</p>
+        </div>
+        <div class="col-sm-6">
+          <img src="./images/wui-openvideoannotation.png" alt="Open Video Annotation screenshot" class="screenshot" />
         </div>
       </div>
+
+      <div class="row">
+        <div class="col-sm-6">
+          <p><a href="http://www.edx.org">EdX</a> is a platform that hosts free courses designed for interactive study via the web, provided by MIT, Harvard and Berkeley.</p>
+        </div>
+        <div class="col-sm-6">
+          <img src="./images/wui-edx.jpg" alt="EdX logo" class="logo" />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6">
+          <p><a href="http://h2o.law.harvard.edu">H2O</a> is a suite of online classroom tools provided by Harvard’s Berkman Center that allow professors to freely develop, remix, and share online textbooks, casebooks, and modules under a Creative Commons license.</p>
+        </div>
+        <div class="col-sm-6">
+          <img src="./images/wui-h2o.png" alt="H2O screenshot" class="screenshot" />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6">
+          <p><a href="http://www.annotationstudio.org">Annotation Studio</a> is a suite of web-based annotation tools developed by MIT’s HyperStudio that supports close reading and collaborative interpretation of online documents. It is designed primarily for humanities students and classrooms.</p>
+        </div>
+        <div class="col-sm-6">
+          <img src="./images/wui-annotationstudio.png" alt="Annotation Studio screenshot" class="screenshot" />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6">
+          <p><a href="http://www.writingpod.com">WritingPod</a> is an online writing community that allows users to share and get feedback on their writing, and engage with what they read.</p>
+        </div>
+        <div class="col-sm-6">
+          <img src="./images/wui-writingpod.png" alt="WritingPod screenshot" class="screenshot" />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6">
+          <p>The <a href="https://it-dev.mpiwg-berlin.mpg.de/tracs/Annotations/wiki">Max Planck Institute for the History of Science</a> maintains a series of software projects for annotation of scanned books, images, and texts.</p>
+        </div>
+        <div class="col-sm-6">
+          <img src="./images/wui-maxplanck.png" alt="Max Planck logo" class="logo" />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6">
+          <p><a href="http://austese.net">AustESE</a> is developing a set of interoperable services to support the publication of electronic scholarly editions by distributed collaborators in a Web 2.0 environment.</p>
+        </div>
+        <div class="col-sm-6">
+          <img src="./images/wui-austese.png" alt="AustESE logo" class="logo" />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6">
+          <p><a href="http://oerpub.org">OERPUB</a> is creating open-source tools for authoring, adapting, remixing, and publishing open education resources and then delivering them to the web, mobile, tablet, and print.</p>
+        </div>
+        <div class="col-sm-6">
+          <img src="./images/wui-epubjsreader.png" alt="ePub.js Reader screenshot" class="screenshot" />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6">
+          <p><a href="http://karmanotes.org">KarmaNotes</a> empowers college students to share course notes, study guides, and other digital learning resources online.</p>
+        </div>
+        <div class="col-sm-6">
+          <img src="./images/wui-karmanotes.png" alt="KarmaNotes logo" class="logo" />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6">
+          <p>The OpenGov Foundation’s <a href="http://opengovfoundation.org/the-madison-project/">Madison Project</a> seeks to open government documents to allow for public discussion, collaboration and improvement.</p>
+        </div>
+        <div class="col-sm-6">
+          <img src="./images/wui-opengov.png" alt="OpenGov logo" class="logo" />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6">
+          <p><a href="http://peerlibrary.org">PeerLibrary</a> provides a collaborative layer of knowledge on top of academic publications, allowing researchers to see and share real-time highlights and annotations.</p>
+        </div>
+        <div class="col-sm-6">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6">
+          <p><a href="http://www.safaritutorials.com">Safari Tutorials</a> provides customized tutorials for training company employees.</p>
+        </div>
+        <div class="col-sm-6">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6">
+          <p><a href="http://papergrader.org">Paper Grader</a> allows teachers and professors to quickly and efficiently collect, annotate, and grade student papers.</p>
+        </div>
+        <div class="col-sm-6">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6">
+          <p><a href="http://www.siyavula.com">Siyavula</a> makes textbooks and resources available online for teachers and learners.</p>
+        </div>
+        <div class="col-sm-6">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6">
+          <p><a href="http://open-apps.uoc.edu/">Universitat Oberta de Catalunya</a> maintains a set of open applications and teaching tools.</p>
+        </div>
+        <div class="col-sm-6">
+        </div>
+      </div>
+
     </article>
 
     <footer>
