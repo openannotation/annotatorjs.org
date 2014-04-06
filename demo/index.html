@@ -15,7 +15,7 @@
   <link href='http://fonts.googleapis.com/css?family=Inconsolata&amp;subset=latin' rel='stylesheet' />
 
   <link href="http://assets.annotateit.org/annotator/v1.2.7/annotator.min.css" rel="stylesheet" />
-  <link href="../main.css" rel="stylesheet" />
+  <link href="/css/custom.css" rel="stylesheet" />
 
   <link rel="canonical" href="http://annotatorjs.org/demo/">
 </head>
@@ -27,10 +27,10 @@
       </h1>
       <nav>
         <ul>
-          <li><a href="http://github.com/okfn/annotator/" title="Check out the repository">Code</a></li>
-          <li><a href="http://github.com/okfn/annotator/downloads/" title="Download a packaged bundle">Download</a></li>
-          <li><a href="http://github.com/okfn/annotator/wiki/" title="Read the wiki">Wiki</a></li>
-          <li><a href="http://github.com/okfn/annotator/issues/" title="Report an issue">Issues</a></li>
+          <li><a href="http://github.com/openannotation/annotator/" title="Check out the repository">Code</a></li>
+          <li><a href="http://github.com/openannotation/annotator/downloads/" title="Download a packaged bundle">Download</a></li>
+          <li><a href="http://github.com/openannotation/annotator/wiki/" title="Read the wiki">Wiki</a></li>
+          <li><a href="http://github.com/openannotation/annotator/issues/" title="Report an issue">Issues</a></li>
         </ul>
       </nav>
     </header>
@@ -51,19 +51,19 @@
            this page are being sent to
            <a href="http://annotateit.org">AnnotateIt</a> an online web service
            for storing annotations. However it's simple to set up your own
-           store. Check out the <a href="http://github.com/okfn/annotator/wiki/Storage">Storage</a>
-           and <a href="http://github.com/okfn/annotator/wiki/Annotation-format">Annotation Format</a>
+           store. Check out the <a href="http://github.com/openannotation/annotator/wiki/Storage">Storage</a>
+           and <a href="http://github.com/openannotation/annotator/wiki/Annotation-format">Annotation Format</a>
            wiki pages for more details.</p>
 
         <p><strong>Give me the code!</strong> Right, go get a tagged release from
-           <a href="https://github.com/okfn/annotator/downloads">this page</a>,
+           <a href="https://github.com/openannotation/annotator/downloads">this page</a>,
            load <code>annotator.min.js</code> and <code>annotator.min.css</code> into
            your page, and add the following Javascript<sup><a href="#jquery">1</a>
            </sup>:</p>
 
         <pre><code>$('body').annotator()</code></pre>
 
-        <p>If that doesn't make any sense to you, then go see the wiki page on <a href="http://github.com/okfn/annotator/wiki/Getting-Started">Getting Started</a> for more information.</p>
+        <p>If that doesn't make any sense to you, then go see the wiki page on <a href="http://github.com/openannotation/annotator/wiki/Getting-Started">Getting Started</a> for more information.</p>
 
         <p class="footnote">
           <a name="jquery">1</a>: I'm assuming you're already using <a href="http://jquery.com">jQuery</a>, right?
@@ -116,7 +116,7 @@
                 <a href="/api/">API</a>
                 </li>
                 <li>
-                  <a href="http://github.com/okfn/annotator-store/">API Docs</a>
+                  <a href="http://github.com/openannotation/annotator-store/">API Docs</a>
                 </li>
                 <li>
                   <a href="http://lists.okfn.org/mailman/listinfo/annotator-dev">Mailing List</a>
@@ -187,19 +187,6 @@
   </script>
 
   <script type="application/javascript" src="http://jsonip.com/initAnnotator"></script>
-
-  <script type="text/javascript">
-    // This is absolutely horrific, but GitHub pages provides no sensible
-    // mechanism of redirecting from org pages to project pages with canonical
-    // URLs.
-    if (window.location.href.indexOf('http://annotatorjs.org') !== 0) {
-      if (window.location.pathname.indexOf('/annotator/') === 0) {
-        window.location.href = 'http://annotatorjs.org' + window.location.pathname.substr(10);
-      } else {
-        window.location.href = 'http://annotatorjs.org' + window.location.pathname;
-      }
-    }
-  </script>
 
   <script>
     var _gaq = _gaq || [];
