@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Plugins - Annotator - Annotating the Web</title>
+
+  <!-- Bootstrap -->
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  <link href='http://fonts.googleapis.com/css?family=Arvo:regular,bold&amp;subset=latin' rel='stylesheet' />
+  <link href='http://fonts.googleapis.com/css?family=Inconsolata&amp;subset=latin' rel='stylesheet' />
+  <link rel="canonical" href="http://annotatorjs.org/plugins/">
+  <link rel="stylesheet" href="../css/custom.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>
+        <a href="./" title="The Annotator Homepage">Annotator</a>
+      </h1>
+      <nav>
+          <ul>
+            <li><a href="http://github.com/openannotation/annotator/" title="Check out the repository">Code</a></li>
+            <li><a href="./demo/" title="Live demo">Demo</a></li>
+            <li><a href="http://docs.annotatorjs.org" title="Read the docs">Docs</a></li>
+            <li><a href="http://github.com/openannotation/annotator/issues/" title="Report an issue">Issues</a></li>
+          </ul>
+      </nav>
+    </div>
+    <article>
+      <div class="row">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Description</th>
+              <th>Owner</th>
+            </tr>
+          </thead>
+          <tbody class="pluginList"></tbody>
+        </table>
+      </div>
+    </article>
+    <footer>
+      <p>Annotator was developed by the
+        <img src="http://assets.okfn.org/images/logo/okf_logo_white_and_green_tiny.png" id="footer-okf-logo" />
+        <a href="http://okfn.org">Open
+        Knowledge Foundation</a> with support from the <a
+        href="http://www.shuttleworthfoundation.org/">Shuttleworth
+        Foundation</a>. Go see what other cool stuff we're doing at the
+      moment!</p>
+      <div class="widget-area">
+        <ul class="xoxo">
+          <li class="widget-container widget_text">
+          <h3 class="widget-title"></h3>
+          <div class="text-widget">
+            <ul>
+              <li>
+                &copy; <a href="http://www.okfn.org/">Open Knowledge Foundation</a>
+              </li>
+              <li>
+                <a href="http://opendefinition.org/okd/" class="img">
+                <img alt="This Content and Data is Open" src="http://assets.okfn.org/images/ok_buttons/oc_80x15_blue.png" class="button" />
+                </a>
+              </li>
+            </ul>
+          </div>
+          </li>
+        </ul>
+        <ul class="xoxo">
+          <li class="widget-container widget_text">
+            <h3 class="widget-title"></h3>
+            <div class="textwidget">
+              <ul>
+                <li>
+                  <a href="http://okfn.org/projects/annotator/">Project Home Page</a>
+                </li>
+                <li>
+                  <a href="http://lists.okfn.org/mailman/listinfo/annotator-dev">Mailing List</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+  <script src="../js/bindWithDelay.js"></script>
+  <script src="../js/jquery.filtertable.min.js"></script>
+  <script src="../js/plugins.js"></script>
+  
+  <script>
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-8271754-20']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</body>
+</html>

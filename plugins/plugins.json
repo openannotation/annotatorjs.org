@@ -1,0 +1,116 @@
+[
+{
+    "name": "Touch Plugin",
+    "description": "Support for touch devices (iOS, Android, etc.)",
+    "owner": "Aron Carroll",
+    "url": "https://github.com/aron/annotator.touch.js"
+},
+{
+    "name": "Offline Plugin",
+    "description": "Support for working on documents while offline, using your browser's localStorage",
+    "owner": "Aron Carroll",
+    "url": "https://github.com/aron/annotator.offline.js"
+},
+{
+    "name": "Annotator Wordpress Plugin",
+    "description": "Installs and integrates the Annotator with your Wordpress site.",
+    "owner": "Open Annotation",
+    "url":"https://github.com/openannotation/annotator-wordpress"
+},
+{
+    "name": "Categories Plugin",
+    "description": "Assign pre-defined categories to annotation and highlight each with different colors. (There is a pull request pending that is not yet fully integrated (waiting for tests)). This does not work with HEAD for now and requires a full check out of the fork (based on a slightly older fork).",
+    "owner": "Ewald Zietsman",
+    "url": "https://github.com/ezietsman/annotator/blob/master/src/plugin/categories.coffee"
+},
+{
+    "name": "Roundup Plugin",
+    "description": "Provide some integration with the Roundup ticket tracker",
+    "owner": "Ewald Zietsman",
+    "url": "https://github.com/ezietsman/annotator"
+},
+{
+    "name": "Margin Viewer Plugin",
+    "description": "Display annotations in the margins",
+    "owner": "Amir More",
+    "url": "https://github.com/habeanf/annotator/blob/master/src/plugin/marginviewer.coffee"
+},
+{
+    "name": "Heatmap Plugin",
+    "description": "Some heatmap related plugin",
+    "owner": "Randall Leeds",
+    "url": "https://github.com/tilgovi/annotator/blob/heatmap/src/plugin/heatmap.coffee"
+},
+{
+    "name": "Readmill Plugin",
+    "description": "Allows you to submit highlights and comments to Readmill",
+    "owner": "Aron Carroll",
+    "url": "https://github.com/aron/annotator.readmill.js"
+},
+{
+    "name": "Drupal Module",
+    "description": "A Drupal module that integrates Annotator with your Drupal site.",
+    "owner": "Liang Shen",
+    "url": "https://drupal.org/project/annotator"
+},
+{
+    "name": "Annotorious",
+    "description": "",
+    "owner": "Annotorious",
+    "url": "http://annotorious.github.io/plug-outs/okfn-annotator.html"
+},
+{
+    "name": "Lorestore Plugin",
+    "description": "An alternate store plugin that provides compatibility with OpenAnnotation as implemented by lorestore",
+    "owner": "UQ eResearch Group",
+    "url": "https://github.com/uq-eresearch/annotator/blob/master/src/plugin/lorestore.coffee"
+},
+{
+    "name": "Motivations Plugin",
+    "description": "allows OA motivations to be attached to annotations",
+    "owner": "UQ eResearch Group",
+    "url": "https://github.com/uq-eresearch/annotator/blob/master/src/plugin/motivations.coffee"
+},
+{
+    "name": "Prov Plugin",
+    "description": "displays OA provenance properties in annotation viewer",
+    "owner": "UQ eResearch Group",
+    "url": "https://github.com/uq-eresearch/annotator/blob/master/src/plugin/prov.coffee"
+},
+{
+    "name": "Share-annotator",
+    "description": "share text and video annotations using social networks or email",
+    "owner": "Daniel Robles",
+    "url": "https://github.com/danielcebrian/share-annotator"
+},
+{
+    "name": "Geolocation-annotator",
+    "description": "set the current user position with HTML5 geolocation to the annotation",
+    "owner": "Daniel Robles",
+    "url": "https://github.com/danielcebrian/geolocation-annotator"
+},
+{
+    "name": "RichText Annotator",
+    "description": "richText give you the possibility to add rich media (rich text, pictures, movies, sounds, ...) using Tinymce in your annotations",
+    "owner": "Daniel Robles",
+    "url": "https://github.com/danielcebrian/richText-annotator"
+},
+{
+    "name": "Symfony-annotator",
+    "description": "Symfony Bundle using Annotator and the Store plugin.",
+    "owner": "James Grindstaff",
+    "url": "https://packagist.org/packages/caxy/annotation-bundle"
+},
+{
+    "name": "Tags-annotator",
+    "description": "Allows you to set pre-determined tags with color differentiators as well as let the users input their own personal tags in a tokenized way.",
+    "owner": "Iduarte1991",
+    "url": "https://github.com/lduarte1991/tags-annotator"
+},
+{
+    "name": "Panel Viewer Plugin",
+    "description": "Universitat Oberta de Catalunya - Allows you to view the annotations in a panel in the right side. You can delete, expand, collapse the panel and find annotations.",
+    "owner": "Albert Juhe",
+    "url": "https://github.com/albertjuhe/annotator_view"
+}
+]
