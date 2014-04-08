@@ -17,6 +17,7 @@
     <![endif]-->
     <link href='http://fonts.googleapis.com/css?family=Arvo:regular,bold&amp;subset=latin' rel='stylesheet' />
     <link href='http://fonts.googleapis.com/css?family=Inconsolata&amp;subset=latin' rel='stylesheet' />
+    <link href="http://assets.annotateit.org/annotator/v1.2.7/annotator.min.css" rel="stylesheet" />
     <link rel="canonical" href="http://annotatorjs.org">
     <link rel="stylesheet" href="css/custom.css">
   </head>
@@ -31,8 +32,8 @@
             <li><a href="http://github.com/openannotation/annotator/" title="Check out the repository">Code</a></li>
 <!--             <li><a href="./demo/" title="Live demo">Demo</a></li> -->
             <li><a href="http://docs.annotatorjs.org" title="Read the docs">Docs</a></li>
-            <li><a href="http://github.com/openannotation/annotator/issues/" title="Report an issue">Issues</a></li>
-            <li><a href="./plugins/">Plugins</a></li>
+            <li><a href="showcase.html" title="See who's using Annotator.">Showcase</a></li>
+            <li><a href="plugins/index.html">Plugins</a></li>
           </ul>
       </nav>
     </div>
@@ -41,11 +42,11 @@
       <div class="row">
         <div class="col-lg-6">
           <h2>The <span id="role">copy-editor</span> of the web</h2>
-          <p>The Annotator is an open-source JavaScript library and tool that can be added to any webpage
-          to make it annotatable.</p>
-          <p>Annotations can have comments, tags, users and more. Morever, the Annotator is designed for
-          <a href="http://github.com/openannotation/annotator/wiki/Plugin-Development">easy extensibility</a> so its a cinch to add a new feature or behaviour.</p>
-          <p>Check out the <a href="./demo/">live demonstration</a> or <a href="#develop">install it now</a>.</p>
+          <p>Annotator is an open-source JavaScript library to easily add annotation functionality to any webpage. Annotations can have comments, tags, links, users, and more. Annotator is designed for <a href="http://docs.annotatorjs.org/en/latest/hacking/plugin-development.html">easy extensibility</a> so its a cinch to add a new feature or behaviour. Annotator also fosters an active developer community with contributors from four continents, building 3rd party plugins allowing the annotation of  PDFs, EPUBs, videos, images, sound, and more.</p>
+          <p>
+          <a class="btn btn-default btn-lg" href="https://github.com/openannotation/annotator/releases/latest">Download</a>
+          <a class="btn btn-default btn-lg" href="https://github.com/openannotation/annotator/">GitHub</a>
+        </p>
         </div>
         <div class="col-lg-6">
           <img class="screenshot" src="./images/annotator.png" alt="The annotator" height="223" width="370" />
@@ -53,22 +54,22 @@
       </div>
 
       <div class="row">
-        <div class="col-xs-3">
+        <div class="col-sm-3">
           <div class="thumbnails">
             <img src="./images/thumb-add.png" alt="Highlight text to annotate" />
           </div>
         </div>
-        <div class="col-xs-3">
+        <div class="col-sm-3">
           <div class="thumbnails">
             <img src="./images/thumb-viewer.png" alt="View annotations by moving your mouse over highlights" />
           </div>
         </div>
-        <div class="col-xs-3">
+        <div class="col-sm-3">
           <div class="thumbnails">
             <img src="./images/thumb-bookmarklet.png" alt="Add the annotator to any page with the bookmarklet"  />
           </div>
         </div>
-        <div class="col-xs-3">
+        <div class="col-sm-3">
           <div class="thumbnails">
             <img src="./images/thumb-editor.png" alt="Save annotations to AnnotateIt" />
           </div>
@@ -77,9 +78,61 @@
 
 
       <div class="row">
-        <h2 id="develop">Using Annotator</h2>
         <div class="col-lg-6">
-          <p>Adding annotation to your webpage using the Annotator is easy.
+          <h2 id="develop">Using Annotator</h2>
+          <p>Simply select some text on this page and make a comment!<p>
+          <p>Adding annotation to any website is easy with Annotator. First, download the Annotator library, include it in your HTML.</p><!-- , or include include the following CDN:</p>
+          <pre><code>
+            <script src="http://assets.annotateit.org/annotator/v1.2.7/annotator-full.min.js"></script>
+          </code></pre> -->
+          <p>Then, add the following javascript to initialize the annotator:</p>
+          <pre><code>var ann = Annotator(document.body);</code></pre>
+          <p>Full instructions are in the <a
+            href="http://github.com/openannotation/annotator/wiki/Getting-Started">Getting
+            Started</a> section of the docs.</p>
+          <p>To setup the default suite of plugins include annotator.min.css and annotator-full.min.js and call the "setupPlugins" method via  .annotator().  For example:</p>
+          <pre><code>var ann = Annotator(document.body); 
+ann.setupPlugins()</code></pre>
+
+        </div>
+        <div class="col-lg-6">
+          <h2 id="develop">Plugins</h2>
+          <p>Annotator has a simple but powerful plugin architecture. Plug-ins can also be included for adding functionality such as user <a href="http://docs.annotatorjs.org/en/latest/plugins/permissions.html">permissions</a>, <a href="http://docs.annotatorjs.org/en/latest/plugins/tags.html">tags</a>, <a href="http://docs.annotatorjs.org/en/latest/plugins/filter.html">filtering</a> and <a href="http://docs.annotatorjs.org/en/latest/plugins/markdown.html">formatting</a>.</p>
+          <p>The Annotator community has developed more than twenty plugins, such as:</p>
+          <ul>
+            <li><a href="http://annotorious.github.io/">Annotorious</a> - image annotation</li>
+            <li><a href="https://github.com/aron/annotator.touch.js">Touch Plugin</a> - support for touch devices (iOS, Android, etc.)</li>
+            <li><a href="https://github.com/aron/annotator.offline.js">Offline Plugin</a> - work on documents while offline, using localStorage</li>
+            <li><a href="https://github.com/danielcebrian/share-annotator">Share-annotator</a> - share text and video annotations using social networks or email</li>
+            <li><a href="https://github.com/danielcebrian/richText-annotator">richText-annotator</a> - rich media and rich text annotations using Tinymce</li>
+          </ul>
+          <p>For a full list of 3rd party Annotator plugins visit our <a href="plugins/index.html">plugin page</a>.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <h2 class="develop">How do I help?</h2>
+          <p>We’re an open source project -- there are a number of ways to get involved. Here are a few:<p>
+          <ul>
+            <li><strong>Fix (or report) bugs:</strong> If you find an issue with The Annotator, have a look at our <a href="https://github.com/openannotation/annotator/issues">issue tracker</a>, and file a bug. If you’re a developer, feel free to fork the project and submit a pull request.</li>
+            <li><strong>Write documentation:</strong> If you find gaps in the <a href="http://docs.annotatorjs.org/">documentation</a>, you can pitch in there too. The process is similar: fork the project, edit the RST docs, and submit a pull request.</li>
+            <li><strong>Write a plugin:</strong> If you’ve written a plugin, chances are your code will be useful to others. Please add a link to the wiki so people can find your stuff.</li>
+            <!-- <li>If you want to learn more about developing your own plugin, please read our documentation about plugin development.</li> -->
+          </ul>
+          <p>If you’re interested in our community, or you’re having trouble with something, please <a href="https://lists.okfn.org/mailman/listinfo/annotator-dev">join our mailing list</a>.</p>
+        </div>
+        <div class="col-lg-6">
+          <h2 class="develop">Who is using it?</h2>
+          <p>More than a dozen projects rely on Annotator for their digital annotation needs and many are open source. A few noteables include <a href="https://hypothes.is/">Hypothes.is</a>, <a href="https://www.edx.org/">edX</a>, <a href="http://www.annotationstudio.org/">Annotation Studio</a>, and <a href="https://peerlibrary.org/">Peer Library</a>. Please checkout our <a href="showcase.html">showcase page</a> for a more complete list.</p>
+          <img class="logos" src="./images/hypothesis.png" alt="Save annotations to AnnotateIt" height="53px"/>
+          <img class="logos" src="./images/edX.jpg" alt="Save annotations to AnnotateIt" height="52px"/>
+          <img class="logos" src="./images/annotation_studio.jpg" alt="Save annotations to AnnotateIt" height="45px"/>
+          <img class="logos" src="./images/peerlibrary.png" alt="Save annotations to AnnotateIt" height="45px"/>
+        </div>
+
+
+
+          <!-- <p>Adding annotation to your webpage using the Annotator is easy.
             Full instructions are in the <a
             href="http://github.com/openannotation/annotator/wiki/Getting-Started">Getting
             Started</a> section of the docs, but it is just two short steps. First, you
@@ -102,11 +155,11 @@
              <code>.annotator()</code>.</p>
           <p>For example:</p>
           <pre><code>$('#content').annotator()
-             .annotator('setupPlugins');</code></pre>
-        </div>
+             .annotator('setupPlugins');</code></pre> -->
+        <!-- </div> -->
       </div>
 
-      <div class="row">
+<!--       <div class="row">
         <div id="about">
           <div id="annotator" class="col-lg-6">
             <h2>Storage</h2>
@@ -127,7 +180,7 @@
              </p>
           </div>
         </div>
-      </div>
+      </div> -->
     </article>
 
     <footer>
@@ -174,8 +227,65 @@
       </div>
     </footer>
   </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="http://assets.annotateit.org/annotator/v1.2.7/annotator-full.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="demo/jwt.js"></script>
+  <script>
+    if (!Date.prototype.toISOString) {
+      Date.prototype.toISOString = function() {
+        function pad(n) { return n < 10 ? '0' + n : n; }
+        return this.getUTCFullYear() + '-'
+            + pad(this.getUTCMonth() + 1) + '-'
+                + pad(this.getUTCDate()) + 'T'
+                    + pad(this.getUTCHours()) + ':'
+                        + pad(this.getUTCMinutes()) + ':'
+                            + pad(this.getUTCSeconds()) + 'Z';
+      };
+    }
+
+    // Please note that you would *never* expose the consumer secret in this way
+    // for an ordinary application. For the purposes of convenience for this demo, we do.
+    var demoConsumerKey = 'd4c108122b51434aab1d27ad4ebd2b02';
+    var demoConsumerSecret = '36977e7b-be7f-4b57-a9eb-9617e4740b6a';
+
+    function getAuthToken(consumerKey, consumerSecret, userId) {
+      "use strict";
+
+      var date = new Date(new Date() - 1 * 60 * 60 * 1000), // 1 hour ago
+          alg = { typ:'JWT', alg:'HS256' },
+          payload = {
+            consumerKey: consumerKey,
+            userId: userId,
+            issuedAt: date.toISOString(),
+            ttl: 86400
+          },
+          token;
+
+      alg = JSON.stringify(alg);
+      payload = JSON.stringify(payload);
+      token = new jwt.WebToken(payload, alg);
+
+      return token.serialize(consumerSecret);
+    }
+
+    function initAnnotator(json) {
+      "use strict";
+
+      $('article').annotator().annotator('setupPlugins', null, {
+        Auth: {
+          token: getAuthToken(demoConsumerKey, demoConsumerSecret, json.ip)
+        },
+        Permissions: false,
+        AnnotateItPermissions: {}
+      });
+    }
+  </script>
+
+  <script type="application/javascript" src="http://jsonip.com/initAnnotator"></script>
+
+
 
   <script type="text/javascript">
     var _gaq = _gaq || [];

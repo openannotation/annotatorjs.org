@@ -13,6 +13,13 @@ img {
 	border: 5px solid #333;
 }
 
+.logos {
+	display: inline;
+	border: none;
+	margin-right: 15px;
+	opacity: .75;
+}
+
 .header, section, article, footer {
 	display: block;
 }
