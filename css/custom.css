@@ -346,6 +346,7 @@ footer {
 	margin-bottom: 3em;
 	line-height: 1.4;
 	clear: both;
+    text-align: center;
 }
 
 footer,
@@ -379,10 +380,12 @@ footer img.button {
 	margin-bottom: -2px;
 }
 
-footer ul.xoxo, footer p {
+footer ul.xoxo {
 	margin-bottom: 1.2em;
 }
-
+footer p {
+    margin-bottom: 0px;
+}
 
 footer .widget-area ul {
 	padding-left: 0;
