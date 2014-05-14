@@ -9,4 +9,4 @@ destination: "../news/"
 # Build settings
 markdown: kramdown
 permalink: none
-exclude: Rakefile
+exclude: [Rakefile]
