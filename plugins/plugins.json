@@ -118,5 +118,11 @@
     "description": "Data Store and RESTful web API for Annotation Studio, compatible with Annotator.",
     "owner": "MIT HyperStudio - Digital Humanities Lab at MIT",
     "url": "https://github.com/hyperstudio/MIT-Annotation-Data-Store"
+},
+{
+    "name": "Annotator Categories",
+    "description": " A plugin for Annotator.js that allows users to select categories for annotations, changes colors.",
+    "owner": "Lacuna Stories",
+    "url": "https://github.com/LacunaStories/Annotator-Categories"
 }
 ]
