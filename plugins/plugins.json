@@ -118,5 +118,11 @@
     "description": "Universitat Oberta de Catalunya - Allows you to view the annotations in a panel in the right side. You can delete, expand, collapse the panel and find annotations.",
     "owner": "Albert Juhe",
     "url": "https://github.com/albertjuhe/annotator_view"
+},
+{
+    "name": "MIT Annotation Data Store",
+    "description": "Data Store and RESTful web API for Annotation Studio, compatible with Annotator.",
+    "owner": "MIT HyperStudio - Digital Humanities Lab at MIT",
+    "url": "https://github.com/hyperstudio/MIT-Annotation-Data-Store"
 }
 ]
