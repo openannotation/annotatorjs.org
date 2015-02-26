@@ -246,7 +246,6 @@ form .actions button {
 
 .header nav ul li a:hover,
 .header nav ul li a.current {
-	text-decoration: none;
 	border-bottom: 2px solid;
 }
 
@@ -476,13 +475,6 @@ ul.annotations .annotation {
 .footnote {
 	font-size: 130%;
 	opacity: 0.9;
-}
-
-/*************************************
- * Plugins Table
- *************************************/
-td.license {
-	white-space: nowrap
 }
 
 /**************************************
