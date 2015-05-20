@@ -31,6 +31,7 @@
             html += '<br /><span class="description">' + item.description + '</span></td>';
             html += '<td class="tags">' + (undefined != item.tags ? item.tags.join(', ') : '') + '</td>';
             html += '<td class="license">' + licenseAnchor(item.license || '') + '</td>';
+            html += '<td class="for">' + (undefined != item.for ? item.for.join(', ') : '') + '</td>';
             $('tbody.pluginList').append(html);
         });
 

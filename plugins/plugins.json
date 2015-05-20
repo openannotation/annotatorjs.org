@@ -5,7 +5,8 @@
     "owner": "Luca Perico",
     "url": "https://github.com/Luperi/PageAnnotatorBundle",
     "license": "MIT",
-    "tags": ["storage"]
+    "tags": ["storage"],
+    "for": ["1.2.x"]
 },
 {
     "name": "Touch Plugin",
@@ -13,7 +14,8 @@
     "owner": "Aron Carroll",
     "url": "https://github.com/aron/annotator.touch.js",
     "license": "MIT",
-    "tags": ["UI"]
+    "tags": ["UI"],
+    "for": ["1.2.x"]
 },
 {
     "name": "Offline Plugin",
@@ -21,7 +23,8 @@
     "owner": "Aron Carroll",
     "url": "https://github.com/aron/annotator.offline.js",
     "license": "MIT",
-    "tags": ["storage"]
+    "tags": ["storage"],
+    "for": ["1.2.x"]
 },
 {
     "name": "Annotator Wordpress Plugin",
@@ -29,7 +32,8 @@
     "owner": "Open Annotation",
     "url":"https://github.com/openannotation/annotator-wordpress",
     "license": "GPL-2.0+",
-    "tags": ["integration"]
+    "tags": ["integration"],
+    "for": ["1.2.x"]
 },
 {
     "name": "Categories Plugin",
@@ -37,7 +41,8 @@
     "owner": "Ewald Zietsman",
     "url": "https://github.com/ezietsman/annotator/blob/master/src/plugin/categories.coffee",
     "license": "MIT or GPL-2.0+",
-    "tags": ["UI"]
+    "tags": ["UI"],
+    "for": ["1.2.x"]
 },
 {
     "name": "Roundup Plugin",
@@ -45,7 +50,8 @@
     "owner": "Ewald Zietsman",
     "url": "https://github.com/ezietsman/annotator",
     "license": "MIT or GPL-2.0+",
-    "tags": ["integration"]
+    "tags": ["integration"],
+    "for": ["1.2.x"]
 },
 {
     "name": "Margin Viewer Plugin",
@@ -53,7 +59,8 @@
     "owner": "Amir More",
     "url": "https://github.com/habeanf/annotator/blob/master/src/plugin/marginviewer.coffee",
     "license": "MIT or GPL-2.0+",
-    "tags": ["UI"]
+    "tags": ["UI"],
+    "for": ["1.2.x"]
 },
 {
     "name": "Heatmap Plugin",
@@ -61,7 +68,8 @@
     "owner": "Randall Leeds",
     "url": "https://github.com/tilgovi/annotator/blob/heatmap/src/plugin/heatmap.coffee",
     "license": "MIT or GPL-2.0+",
-    "tags": ["UI"]
+    "tags": ["UI"],
+    "for": ["1.2.x"]
 },
 {
     "name": "Readmill Plugin",
@@ -69,7 +77,8 @@
     "owner": "Aron Carroll",
     "url": "https://github.com/aron/annotator.readmill.js",
     "license": "MIT",
-    "tags": ["integration"]
+    "tags": ["integration"],
+    "for": ["1.2.x"]
 },
 {
     "name": "Drupal Module",
@@ -77,7 +86,8 @@
     "owner": "Liang Shen",
     "url": "https://drupal.org/project/annotator",
     "license": "GPL-2.0",
-    "tags": ["integration"]
+    "tags": ["integration"],
+    "for": ["1.2.x"]
 },
 {
     "name": "Annotorious",
@@ -85,7 +95,8 @@
     "owner": "Annotorious",
     "url": "http://annotorious.github.io/plug-outs/okfn-annotator.html",
     "license": "MIT",
-    "tags": ["UI", "formats"]
+    "tags": ["UI", "formats"],
+    "for": ["1.2.x"]
 },
 {
     "name": "Lorestore Plugin",
@@ -93,7 +104,8 @@
     "owner": "UQ eResearch Group",
     "url": "https://github.com/uq-eresearch/annotator/blob/master/src/plugin/lorestore.coffee",
     "license": "MIT or GPL-2.0+",
-    "tags": ["storage"]
+    "tags": ["storage"],
+    "for": ["1.2.x"]
 },
 {
     "name": "Motivations Plugin",
@@ -101,7 +113,8 @@
     "owner": "UQ eResearch Group",
     "url": "https://github.com/uq-eresearch/annotator/blob/master/src/plugin/motivations.coffee",
     "license": "MIT or GPL-2.0+",
-    "tags": ["UI", "data"]
+    "tags": ["UI", "data"],
+    "for": ["1.2.x"]
 },
 {
     "name": "Prov Plugin",
@@ -109,7 +122,8 @@
     "owner": "UQ eResearch Group",
     "url": "https://github.com/uq-eresearch/annotator/blob/master/src/plugin/prov.coffee",
     "license": "MIT or GPL-2.0+",
-    "tags": ["UI", "data"]
+    "tags": ["UI", "data"],
+    "for": ["1.2.x"]
 },
 {
     "name": "Share-annotator",
@@ -117,7 +131,8 @@
     "owner": "Daniel Robles",
     "url": "https://github.com/danielcebrian/share-annotator",
     "license": "GPL-2.0+",
-    "tags": ["UI"]
+    "tags": ["UI"],
+    "for": ["1.2.x"]
 },
 {
     "name": "Geolocation-annotator",
@@ -125,7 +140,8 @@
     "owner": "Daniel Robles",
     "url": "https://github.com/danielcebrian/geolocation-annotator",
     "license": "GPL-2.0+",
-    "tags": ["data"]
+    "tags": ["data"],
+    "for": ["1.2.x"]
 },
 {
     "name": "RichText Annotator",
@@ -133,7 +149,8 @@
     "owner": "Daniel Robles",
     "url": "https://github.com/danielcebrian/richText-annotator",
     "license": "GPL-2.0+",
-    "tags": ["UI"]
+    "tags": ["UI"],
+    "for": ["1.2.x"]
 },
 {
     "name": "Symfony-annotator",
@@ -141,7 +158,8 @@
     "owner": "James Grindstaff",
     "url": "https://packagist.org/packages/caxy/annotation-bundle",
     "license": "MIT",
-    "tags": ["storage"]
+    "tags": ["storage"],
+    "for": ["1.2.x"]
 },
 {
     "name": "Tags-annotator",
@@ -149,7 +167,8 @@
     "owner": "Iduarte1991",
     "url": "https://github.com/lduarte1991/tags-annotator",
     "license": "GPL-2.0",
-    "tags": ["UI"]
+    "tags": ["UI"],
+    "for": ["1.2.x"]
 },
 {
     "name": "Panel Viewer Plugin",
@@ -157,7 +176,8 @@
     "owner": "Albert Juhe",
     "url": "https://github.com/albertjuhe/annotator_view",
     "license": "GPL-3.0+",
-    "types": ["UI"]
+    "types": ["UI"],
+    "for": ["1.2.x"]
 },
 {
     "name": "MIT Annotation Data Store",
@@ -165,7 +185,8 @@
     "owner": "MIT HyperStudio - Digital Humanities Lab at MIT",
     "url": "https://github.com/hyperstudio/MIT-Annotation-Data-Store",
     "license": "GPL-2.0",
-    "tags": ["storage"]
+    "tags": ["storage"],
+    "for": ["1.2.x"]
 },
 {
     "name": "Annotator Categories",
@@ -173,6 +194,7 @@
     "owner": "Lacuna Stories",
     "url": "https://github.com/LacunaStories/Annotator-Categories",
     "license": "GPL-3.0+",
-    "tags": ["UI"]
+    "tags": ["UI"],
+    "for": ["1.2.x"]
 }
 ]
