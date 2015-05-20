@@ -1,9 +1,10 @@
 [
 {
-"name": "Symfony - PageAnnotatorBundle",
-"description": "Symfony Bundle using AnnotatorJs. Store Plugin implemented and it lets you annotate with fixed values.",
-"owner": "Luca Perico",
-"url": "https://github.com/Luperi/PageAnnotatorBundle"
+    "name": "Symfony - PageAnnotatorBundle",
+    "description": "Symfony Bundle using AnnotatorJs. Store Plugin implemented and it lets you annotate with fixed values.",
+    "owner": "Luca Perico",
+    "url": "https://github.com/Luperi/PageAnnotatorBundle",
+    "license": "MIT"
 },
 {
     "name": "Touch Plugin",
