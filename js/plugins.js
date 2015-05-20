@@ -29,6 +29,7 @@
             html += '<td><a class="name" href="' + item.url + '" target="_blank">' + item.name + '</a>';
             html += '<br /><span class="text-muted owner">' + item.owner + '</span>';
             html += '<br /><span class="description">' + item.description + '</span></td>';
+            html += '<td class="tags">' + (undefined != item.tags ? item.tags.join(', ') : '') + '</td>';
             html += '<td class="license">' + licenseAnchor(item.license || '') + '</td>';
             $('tbody.pluginList').append(html);
         });
