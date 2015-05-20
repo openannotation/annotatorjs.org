@@ -480,8 +480,12 @@ ul.annotations .annotation {
 /*************************************
  * Plugins Table
  *************************************/
-td.license {
+.table-plugins .license {
 	white-space: nowrap
+}
+
+.table-plugins .name {
+	font-size: 130%
 }
 
 /**************************************
