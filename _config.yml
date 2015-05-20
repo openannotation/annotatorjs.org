@@ -7,3 +7,4 @@ url: "http://annotatorjs.org"
 # Build settings
 markdown: kramdown
 permalink: none
+exclude: [README.md]
