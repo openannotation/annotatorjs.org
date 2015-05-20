@@ -477,6 +477,30 @@ ul.annotations .annotation {
 	opacity: 0.9;
 }
 
+/*************************************
+ * Plugins Table
+ *************************************/
+.table-plugins .license {
+	white-space: nowrap
+}
+
+.table-plugins .name,
+.table-plugins .tags {
+	font-size: 130%
+}
+.tag-storage {
+  background-color: #F0AD4E
+}
+.tag-ui {
+  background-color: #5CB85C
+}
+.tag-integration {
+  background-color: #777777
+}
+.tag-data {
+  background-color: #337AB7
+}
+
 /**************************************
   * Code Highlighting
   *************************************/
