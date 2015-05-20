@@ -1,99 +1,18 @@
-<!DOCTYPE html>
-<html>
+---
+layout: default
+---
 
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>News - Annotator - Annotating the Web</title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
-    <link rel="canonical" href="http://annotatorjs.org../news/">
-
-    <!-- Custom CSS -->
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Arvo:regular,bold&amp;subset=latin' rel='stylesheet' />
-    <link href='http://fonts.googleapis.com/css?family=Inconsolata&amp;subset=latin' rel='stylesheet' />
-    <link href="http://assets.annotateit.org/annotator/v1.2.10/annotator.min.css" rel="stylesheet" />
-    <link rel="canonical" href="http://annotatorjs.org">
-    <link rel="stylesheet" href="/css/custom.css">
-    <link rel="stylesheet" href="/css/news.css">
-</head>
-
-
-    <body>
-
-    <div class="container">
-        <div class="header">
-    <h1>
-        <a href="/" title="The Annotator Homepage">Annotator</a>
-    </h1>
-    <nav>
-    <ul>
-        <li><a href="http://github.com/openannotation/annotator/" title="Check out the repository">Code</a></li>
-        <li><a href="http://docs.annotatorjs.org" title="Read the docs">Docs</a></li>
-        <li><a href="../showcase.html" title="See who's using Annotator.">Showcase</a></li>
-        <li><a href="../plugins/index.html">Plugins</a></li>
-        <li><a href="../news/">News</a></li>
-    </ul>
-    </nav>
-</div>
-
-    
-        <div class="page-content">
-          <div class="wrap">
-          <div class="home">
+<div class="home">
 
   <ul class="posts">
-    
+    {% for post in site.posts %}
       <li>
-        <span class="post-date">May 9, 2014</span>
-        <a class="post-link" href="../news/annotator-community-call-notes-5914.html">Annotator Community Call Notes (5/9/14)</a>
+        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
       </li>
-    
-      <li>
-        <span class="post-date">Jan 22, 2014</span>
-        <a class="post-link" href="../news/annotator-documentation-planning-notes-012214.html">Annotator Documentation Planning Notes (01/22/14)</a>
-      </li>
-    
-      <li>
-        <span class="post-date">Dec 18, 2013</span>
-        <a class="post-link" href="../news/annotator-documentation-planning-notes-121813.html">Annotator Community Call Notes (12/18/13)</a>
-      </li>
-    
-      <li>
-        <span class="post-date">Sep 27, 2013</span>
-        <a class="post-link" href="../news/annotator-community-call-92713.html">Annotator Community Call Notes (9/27/13)</a>
-      </li>
-    
-      <li>
-        <span class="post-date">Jul 16, 2013</span>
-        <a class="post-link" href="../news/annotator-community-call-notes-71613.html">Annotator Community Call Notes (7/16/13)</a>
-      </li>
-    
-      <li>
-        <span class="post-date">May 16, 2013</span>
-        <a class="post-link" href="../news/annotators-unite.html">Annotators unite!</a>
-      </li>
-    
-      <li>
-        <span class="post-date">May 13, 2012</span>
-        <a class="post-link" href="../news/welcome-to-annotator-news.html">Welcome to Annotator News!</a>
-      </li>
-    
+    {% endfor %}
   </ul>
 
-  <p class="rss-subscribe">subscribe <a href="../news/feed.xml">via RSS</a></p>
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>
-
-          </div>
-        </div>
-    
-        <footer>
-      <p>Annotator is developed by a wide range of <a href="https://github.com/openannotation/annotator/graphs/contributors">contributors</a> and supported by a number of <a href="http://annotatorjs.org/showcase.html">organizations</a>.  Previous financial support was provided by the <a href="http://www.shuttleworthfoundation.org/">Shuttleworth Foundation</a> and the <a href="http://okfn.org">Open Knowledge Foundation</a></p>
-</footer>
-
-    </div>
-
-    </body>
-</html>
