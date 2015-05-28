@@ -267,7 +267,8 @@ article p,
 article ul,
 article ol,
 article pre,
-article dl {
+article dl,
+article form {
 	font-size: 1.6em /* 16px */;
 	line-height: 1.375em /* 22px */;
 	margin-bottom: 1em;
