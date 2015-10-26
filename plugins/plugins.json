@@ -1,5 +1,14 @@
 [
 {
+    "name": "Paragraph icons for Annotator.js",
+    "description": "An icon next to each paragraph, that matches the text style. Makes annotation easier to discover.",
+    "owner": "Factlink",
+    "url": "https://github.com/Factlink/annotator-paragraph-icons",
+    "license": "MIT",
+    "tags": ["UI"],
+    "for": ["2.0.x"]
+},
+{
     "name": "Symfony - PageAnnotatorBundle",
     "description": "Symfony Bundle using AnnotatorJs. Store Plugin implemented and it lets you annotate with fixed values.",
     "owner": "Luca Perico",
