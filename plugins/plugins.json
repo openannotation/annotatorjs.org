@@ -9,6 +9,42 @@
     "for": ["2.0.x"]
 },
 {
+    "name": "annotator-marginalia",
+    "description": "Display annotations in the margin of the page",
+    "owner": "Emory University Library & IT Services",
+    "url": "http://emory-lits-labs.github.io/annotator-marginalia/",
+    "license": "Apache-2.0",
+    "tags": ["UI"],
+    "for": ["2.0.x"]
+},
+{
+    "name": "annotator-meltdown",
+    "description": "Formatted annotations using markdown notation with a toolbar and preview",
+    "owner": "Emory University Library & IT Services",
+    "url": "http://emory-lits-labs.github.io/annotator-meltdown/",
+    "license": "Apache-2.0",
+    "tags": ["UI"],
+    "for": ["2.0.x"]
+},
+{
+    "name": "annotator-meltdown-zotero",
+    "description": "Search for Zotero citations and add them to annotations using the Zotero web API (requires annotator-meltdown)",
+    "owner": "Emory University Library & IT Services",
+    "url": "http://emory-lits-labs.github.io/annotator-meltdown-zotero/",
+    "license": "Apache-2.0",
+    "tags": ["UI"],
+    "for": ["2.0.x"]
+},
+{
+    "name": "annotator-imgselect",
+    "description": "Select and annotate portions of images",
+    "owner": "Emory University Library & IT Services",
+    "url": "http://emory-lits-labs.github.io/annotator-imgselect/",
+    "license": "Apache-2.0",
+    "tags": ["UI"],
+    "for": ["2.0.x"]
+},
+{
     "name": "Symfony - PageAnnotatorBundle",
     "description": "Symfony Bundle using AnnotatorJs. Store Plugin implemented and it lets you annotate with fixed values.",
     "owner": "Luca Perico",
