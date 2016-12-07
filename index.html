@@ -88,12 +88,12 @@
             <script src="http://assets.annotateit.org/annotator/v1.2.10/annotator-full.min.js"></script>
           </code></pre> -->
           <p>Then, add the following javascript to initialize the annotator:</p>
-          <pre><code>var ann = Annotator(document.body);</code></pre>
+          <pre><code>var ann = new Annotator(document.body);</code></pre>
           <p>Full instructions are in the <a
             href="http://docs.annotatorjs.org/en/latest/usage.html">Usage</a>
             section of the docs.</p>
           <p>To setup the default suite of plugins include annotator.min.css and annotator-full.min.js and call the "setupPlugins" method via  .annotator().  For example:</p>
-          <pre><code>var ann = Annotator(document.body); 
+          <pre><code>var ann = new Annotator(document.body); 
 ann.setupPlugins()</code></pre>
 
         </div>
